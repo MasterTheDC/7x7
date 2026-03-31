@@ -67,7 +67,6 @@
     manualMode: document.getElementById("manual-mode"),
     turnCount: document.getElementById("turn-count"),
     filledCount: document.getElementById("filled-count"),
-    recommendationSource: document.getElementById("recommendation-source"),
     recommendationEmpty: document.getElementById("recommendation-empty"),
     recommendationCard: document.getElementById("recommendation-card"),
     recommendationLabel: document.getElementById("recommendation-label"),
@@ -879,11 +878,6 @@
   }
 
   function renderRecommendation() {
-    elements.recommendationSource.textContent = state.recommendation
-      ? state.recommendation.source
-      : state.selectedPieceType
-        ? "計算中"
-        : "未選択";
     if (!state.recommendation) {
       elements.recommendationEmpty.classList.remove("is-hidden");
       elements.recommendationCard.classList.add("is-hidden");

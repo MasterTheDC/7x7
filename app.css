@@ -70,6 +70,7 @@ h1 {
   margin: 14px 0 0;
   max-width: 64ch;
   color: var(--muted);
+  font-size: 17px;
   line-height: 1.65;
 }
 
@@ -193,18 +194,26 @@ h1 {
   border-radius: 5px;
   margin-right: 8px;
   vertical-align: middle;
+  border: 1px solid rgba(40, 75, 99, 0.22);
+}
+
+.legend-box.empty {
+  background: linear-gradient(180deg, rgba(155, 183, 201, 0.18), rgba(155, 183, 201, 0.06));
 }
 
 .legend-box.filled {
   background: var(--filled);
+  border-color: rgba(24, 43, 57, 0.86);
 }
 
 .legend-box.recommend {
   background: var(--recommend);
+  border-color: transparent;
 }
 
 .legend-box.fresh {
   background: var(--fresh);
+  border-color: transparent;
 }
 
 .control-panel {
